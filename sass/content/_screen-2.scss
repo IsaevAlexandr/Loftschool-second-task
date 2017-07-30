@@ -1,0 +1,74 @@
+.screen-2 {
+	background-image: url("../img/backgrounds/screen-2-bg.png");
+	background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.screen-2-container {
+	display: flex;
+	flex-direction: column;
+    // justify-content: center; //по-вертикали
+    align-items: center; //по-горизонтали
+ 
+}
+
+.content__title--screen-2 {
+	color: #2f3234;
+}
+
+.main-2s {
+	
+}
+
+.main-2s__list {
+	display: flex;
+	flex-direction: row;
+}
+
+.main-2s__item {
+	margin-right: 5px;
+}
+
+.main-2s__img {
+	width: 97px;
+	height: 89px;
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+
+.main-2s__img--meaet {
+	background-image: url("../img/icons/meat.svg");
+}
+
+.main-2s__img--hand {
+	background-image: url("../img/icons/hand.svg");
+}
+
+.main-2s__img--natural {
+	background-image: url("../img/icons/natural.svg");
+}
+
+.main-2s--title {
+	color: #2f3234;
+	font-family: Lifehack;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28px;
+	text-align: center;
+}
+
+.main-2s__discription {
+	width: 285px;
+	opacity: 0.8;
+	color: #2f3234;
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	text-align: center;
+}

@@ -1,0 +1,124 @@
+.screen-1 {
+    background-image: url("../img/backgrounds/screen-1-bg.png");
+    background-position: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.screen-1-container {
+
+}
+
+.header {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    margin-right: auto;
+}
+
+.header__logo-link {
+    width: 92px;
+    height: 69px;
+    display: block;
+    background-image: url("../img/icons/logo/logo.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__menu {
+    margin-right: rem(15px);
+}   
+
+.header__menu-list {
+
+}
+
+.header__menu-item {
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+
+    &:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: "";
+    width: 5px;
+    height: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 12px;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+}
+
+.header__menu-link {
+    display: inline-block;
+    vertical-align: middle;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.header__btn {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+
+
+.main-1s {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  align-items: center;
+  padding-bottom: 15%;
+}
+
+.main-1s__content-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-1s__content-burger-img {
+    width: 451px;
+    height: 420px;
+    background-image: url("../img/content/burger-1s.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+}
+
+.main-1s__content-discription-block {
+    width: 385px;
+    padding-top: 120px;
+}
+
+.main-1s__content-discription {
+    color: #ffffff;
+    font-family: Lifehack;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 85px;
+}
+
+
