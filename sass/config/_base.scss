@@ -10,7 +10,11 @@ body {
   line-height: 1.42;
 }
 
-*, *:before, *:after { 
+// *, *:before, *:after { 
+//   box-sizing: border-box; 
+// }
+
+* { 
   box-sizing: border-box; 
 }
 
@@ -18,4 +22,16 @@ ul {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+
+// посмотреть что бедет без этого свойства
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }

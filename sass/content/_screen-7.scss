@@ -1,0 +1,139 @@
+.section_screen-7 {
+    background: url("../img/backgrounds/screen-7-bg.jpg") center center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-title_screen_7 {
+	margin-top: -20px;
+    margin-bottom: 56px;
+}
+
+.form {
+	display: flex;
+	flex-flow: row no-wrap;
+	text-align: left;
+}
+.form__block {
+	// border: 1px dotted red;	
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 10px;
+}
+
+.form__row {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.form__label {
+	display: block;
+	flex: 1;
+	margin-left: 16px;
+	
+	&:first-child {
+		margin: 0;
+	}
+}
+.form__title {
+	display: inline-flex;
+	color: $white;
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	align-items: center;
+}
+.form__input {
+	width: 100%;
+	border-radius: 5px;
+	border: 1px solid $input-border;
+	background-color: $white;
+	outline: none;
+	padding: 7px 14px;
+}
+
+
+
+.form__textarea {
+	height: 110px;
+	width: 100%;
+	padding: 7px 14px;
+	border-radius: 5px;
+	border: 1px solid $input-border;
+	background-color: $white;
+	resize: none;
+	outline: none;
+}
+
+.form__radio {
+
+	display: none;
+
+	&:checked +.form__radio-fake:after {
+		content: "";
+		width: 7px;
+		height: 7px;
+		background-color: #e35028;
+		border-radius: 50%;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}	
+}
+
+.form__radio-fake {
+	display: inline-block;
+	align-items: center;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: $white;
+	position: relative;
+	vertical-align: middle;
+	margin-right: 6px;
+}
+.form__reset {
+	display: inline-flex;
+    border: none;
+    outline: none;
+    color: $white;
+    padding: 12px 15px;
+    background-color: transparent;
+    cursor: pointer;
+	font-family: Ubuntu;
+	font-size: 14px;
+	font-weight: 300;
+
+}
+.form__checkbox-fake {
+	position: relative;
+	display: inline-flex;
+	width: 15px;
+	height: 15px;
+	background-color: $white;
+	margin-right: 6px;
+}
+.form__checkbox {
+	display: none;
+
+	&:checked + .form__checkbox-fake:after {
+		content: "";
+		width: 11px;
+		height: 9px;
+		background: url("../../img/icons/checkbox-icon.png") center center no-repeat;
+		background-size: cover;
+		border-radius: 50%;
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+

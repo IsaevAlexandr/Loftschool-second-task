@@ -1,0 +1,82 @@
+.section_screen-8 {
+    background: url("../img/backgrounds/screen-8-bg.jpg") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container_screen-8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 0 22px;
+}
+
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #090909;
+	display: flex;
+	justify-content: center;
+	padding: 8px 0;
+}
+
+.footer__contacts {
+	margin-right: auto;
+	display: flex;
+	flex-direction: column;
+	align-content: space-around;
+}
+
+.footer__location {
+	font-family: Ubuntu;
+	font-size: 14px;
+	line-height: 24px;
+	color: $white;
+	font-weight: 300;
+
+	
+}
+
+
+.footer_phone{
+	display: flex;
+	align-items: center;
+	font-family: Ubuntu;
+	font-size: 14px;
+	color: #e45028;
+	font-weight: 700;
+}
+
+.footer_phone-icon {
+	width: 12px;
+	height: 11px;
+	fill: #e45028;
+	margin-right: 10px;	
+}
+.footer__socials {
+	display: flex;
+	align-items: center;
+}
+
+.socials__list {
+	display: flex;
+}
+.socials__item {
+	margin-right: 9px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.socials__icon {
+	width: 23px;
+	height: 20px;
+	fill: $black;
+
+	&:hover {
+		fill: $white;
+	}
+} 
