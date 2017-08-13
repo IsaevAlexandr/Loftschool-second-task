@@ -1,14 +1,14 @@
 .order-btn {
     display: inline-flex;
-    border-radius: 5px;
+    border-radius: rem(5px);
     border: none;
     outline: none;
     color: $white;
     font-family: Ubuntu;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     text-transform: uppercase;
-    padding: 12px 15px;
+    padding: rem(12px) rem(15px);
     background-color: $red;
     cursor: pointer;
 

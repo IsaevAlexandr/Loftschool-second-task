@@ -8,8 +8,8 @@
 
 .section-title_screen_5 {
 	position: absolute;
-	top: 20px;
-	left: 47px;
+	top: rem(20px);
+	left: rem(92px);
 	color: $white;
 	// margin-left: 50px;
 	// margin-right: auto;
@@ -32,9 +32,9 @@
 		height: 0;
 		color: $white;
 		font-family: Ubuntu;
-		font-size: 14px;
+		font-size: rem(14px);
 		font-weight: 300;
-		line-height: 24px;
+		line-height: rem(24px);
 		background-color: rgba($black, .93);
 		overflow: hidden;
 		// display: none;
@@ -47,16 +47,16 @@
 		}
 
 		p {
-			width: 541px;
+			width: rem(541px);
 			height: 100%;
-			padding: 33px 62px 37px;
+			padding: rem(33px) rem(62px);
 		}
 		
 	}
 }
 
 .burger-menu__name {
-	width: 80px;
+	width: rem(80px);
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -64,7 +64,7 @@
 
 	color: $white;
 	font-family: Gagalin;
-	font-size: 40px;
+	font-size: rem(40px);
 	font-weight: 400;
 	text-decoration: none;
 

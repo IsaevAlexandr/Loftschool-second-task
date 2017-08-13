@@ -1,10 +1,6 @@
 .wrapper {
     position: relative;
     width: 100%;
-
-    // потом посмотреть, что будет без этой найстройки
-    min-width: 940px + 20px;
-
     min-height: 100%;
     overflow: hidden;
 }
@@ -18,13 +14,30 @@
     width: 100%;
     min-height: 650px; 
     height: 100vh;
+
+    @include tab {
+        min-height: 1024px;
+    }
+
+    @include mob {
+        min-height: 800px;
+    }
 }
 
 .container {
     position: relative;
-    width: 940px;
+    width: 95%;
+    max-width: 940px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+
+    @include tab {
+        max-width: $tablets;
+    }
+    
+    @include mob {
+        max-width: $mobile;
+    }
 }
 

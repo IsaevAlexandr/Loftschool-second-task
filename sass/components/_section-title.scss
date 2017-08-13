@@ -1,9 +1,14 @@
 .section-title {
     color: $yellow;
     font-family: Gagalin;
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: 400;
-    line-height: 85px;
-    margin-top: 70px;
-    margin-bottom: 25px;    
+    line-height: rem(85px);
+    margin-top: rem(70px);
+    margin-bottom: rem(25px); 
+
+    @include tab {
+        margin-top: 0;
+        text-align: center;
+    }   
 }

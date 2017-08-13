@@ -11,7 +11,7 @@
     display: flex;
     flex-flow: row no-wrap;
     align-items: center;
-    padding: 12px 0;
+    padding: rem(12px) 0;
 }
 
 .header__logo {
@@ -20,19 +20,23 @@
 
 .logo__link {
     display: block;
-    width: 92px;
-    height: 69px; 
+    width: rem(92px);
+    height: rem(69px); 
 }
 
 .logo__img {
-    width: 92px;
-    height: 69px; 
+    width: rem(92px);
+    height: rem(69px); 
 }
 
 .header__menu {
     display: flex;
     align-items: center;
-    margin-right: 15.5px;
+    margin-right: rem(15.5px);
+
+    @include tab {
+        display: none;
+    }
 }
 
 .menu__list {
@@ -49,10 +53,10 @@
         align-items: center;
         content: "";
         background-color: $white;
-        width: 4px;
-        height: 4px;
+        width: rem(4px);
+        height: rem(4px);
         border-radius: 50%;
-        margin: 0 15px;
+        margin: 0 rem(15px);
     }
 
     &:last-child {
@@ -66,7 +70,7 @@
 .menu__link {
     color: $white;
     font-family: Ubuntu;
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: 500;
     text-transform: uppercase;
     text-decoration: none;
@@ -77,58 +81,87 @@
 }
 
 .menu-btn {
-    width: 24px;
-    height: 22px;
-    background: url("../../img/icons/menu-icon.png") center center no-repeat;
+    width: rem(24px);
+    height: rem(22px);
+    background: url("../img/icons/menu-icon.png") center center no-repeat;
     background-size: cover;
-    margin-left: 30px;
+    margin-left: rem(30px);
     border: 0;
     outline: none;
     cursor: pointer;
     display: none;
+
+    @include tab {
+        display: flex;
+    }
 }
 
 .content {
+    // width: rem(451px);
     display: flex;
     align-items: center;
     flex-grow: 1;
-    padding-bottom: 170px;
-    margin: 0 20px;
+    padding-bottom: rem(170px);
+    margin: 0 rem(20px);
+
+    @include tab {
+        flex-direction: column;
+        padding: 0 10%;
+        margin: 0;
+        justify-content: center;
+        margin-bottom: rem(170px);
+    }
+
 }
 
 .content__section {
 
     .section-title, .content__text {
-        padding-left: 10px;
+        padding-left: rem(10px);
+
+    }
+
+    @include tab {
+        text-align: center;
+        .section-title, .content__text {
+            padding-left: 0;
+            width: rem(451px);
+        }
+        
     }
 }
 
 .content__img {
-    width: 451px;
-    height: 420px;
+    width: rem(451px);
+    height: rem(420px);
     background: url("../img/content/burger-1s.png") center center no-repeat;
     background-size: cover;
+
+    @include mob {
+      width: rem(360px);
+      height: rem(333px);  
+    }
 }
 
 .content__text {
     color: $white;
     font-family: Lifehack;
-    font-size: 65px;
+    font-size: rem(65px);
     font-weight: 500;
-    line-height: 60px;
+    line-height: rem(60px);
 }
 
 .nav-btn {
     display: block;
-    width: 29px;
-    height: 14px;
+    width: rem(29px);
+    height: rem(14px);
     background: url("../img/icons/down-arrow.svg") center center no-repeat;
     background-size: cover;
     position: absolute;
     left: 50%;
-    margin-left: -14px;
+    margin-left: rem(-14px);
     bottom: 0;
-    margin-bottom: 40px;
+    margin-bottom: rem(40px);
 }
 
 

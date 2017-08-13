@@ -4,6 +4,11 @@
     position: relative;
 }
 
+.section-title_screen_4 {
+	@include tab {
+		margin-left: rem(-60px);
+	}
+}
 .team {
 	position: absolute;
 	top: 0;
@@ -11,18 +16,26 @@
 	bottom: 0;
 	width: 50%;
 	background-color: rgba($black, .93);
-	padding-left: 80px;
+	padding-left: rem(80px);
+
+	@include tab {
+		width: 100%;
+		display: flex;
+		flex-flow: column nowrap;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 .team__list {
-	margin-top: 70px;
+	margin-top: rem(70px);
 }
 
 .team__item {
-	margin-bottom: 35px;
+	margin-bottom: rem(35px);
 	width: 80%;
 
-	&.active {
+	&_active {
 
 		.team__container {
 			height: auto;
@@ -39,21 +52,25 @@
 .team__name {
 	color: $white;
 	font-family: Gagalin;
-	font-size: 14px;
+	font-size: rem(14px);
 	font-weight: 400;
 	display: flex;
 	align-items: center;
-	margin-bottom: 15px;
+	margin-bottom: rem(15px);
 	cursor: pointer;
+
+	@include tab {
+		justify-content: center;
+	}
 
 	&:before {
 		content: "";
 		width: 0;
 		height: 0;
-		border-top: 6px solid $yellow;
-		border-right: 5px solid transparent;
-		border-left: 5px solid transparent;
-		margin-right: 8px;
+		border-top: rem(6px) solid $yellow;
+		border-right: rem(5px) solid transparent;
+		border-left: rem(5px) solid transparent;
+		margin-right: rem(8px);
 	}
 }
 
@@ -61,14 +78,24 @@
 	display: flex;
 	height: 0;
 	overflow: hidden;
+
+	@include tab {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
 }
 
 .team__foto {
-	width: 100px;
-	height: 100px;
+	width: rem(100px);
+	height: rem(100px);
 	border-radius: 50%;
 	overflow: hidden;
-	margin-left: 10px;
+	margin-left: rem(10px);
+
+	@include tab {
+		margin-bottom: 20px;
+	}
 }
 
 .team__img {
@@ -78,18 +105,22 @@
 .team__description {
 	color: #ffffff;
 	font-family: Ubuntu;
-	font-size: 14px;
+	font-size: rem(14px);
 	width: 70%;
-	padding-left: 27px;
-	margin-top: -3px;
+	padding-left: rem(27px);
+	margin-top: rem(-3px);
+
+	@include tab {
+		padding: 0;
+	}
 	
 	.team__title {
 		font-weight: 700;
-		margin-bottom: 12px;
+		margin-bottom: rem(12px);
 	}
 	p {
 		font-weight: 300;
-		line-height: 24px;
+		line-height: rem(24px);
 	}
 }
 

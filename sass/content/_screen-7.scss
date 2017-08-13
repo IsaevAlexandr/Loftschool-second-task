@@ -7,8 +7,8 @@
     text-align: center;
 }
 .section-title_screen_7 {
-	margin-top: -20px;
-    margin-bottom: 56px;
+	margin-top: rem(-20px);
+    margin-bottom: rem(56px);
 }
 
 .form {
@@ -21,18 +21,18 @@
 	display: flex;
 	flex-direction: column;
 	flex: 1;
-	padding: 10px;
+	padding: rem(10px);
 }
 
 .form__row {
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: rem(20px);
 }
 
 .form__label {
 	display: block;
 	flex: 1;
-	margin-left: 16px;
+	margin-left: rem(16px);
 	
 	&:first-child {
 		margin: 0;
@@ -42,28 +42,28 @@
 	display: inline-flex;
 	color: $white;
 	font-family: Ubuntu;
-	font-size: 14px;
+	font-size: rem(14px);
 	font-weight: 300;
-	margin-bottom: 10px;
+	margin-bottom: rem(10px);
 	align-items: center;
 }
 .form__input {
 	width: 100%;
-	border-radius: 5px;
+	border-radius: rem(5px);
 	border: 1px solid $input-border;
 	background-color: $white;
 	outline: none;
-	padding: 7px 14px;
+	padding: rem(7px) rem(14px);
 }
 
 
 
 .form__textarea {
-	height: 110px;
+	height: rem(110px);
 	width: 100%;
-	padding: 7px 14px;
-	border-radius: 5px;
-	border: 1px solid $input-border;
+	padding: rem(7px) rem(14px);
+	border-radius: rem(5px);
+	border: rem(1px) solid $input-border;
 	background-color: $white;
 	resize: none;
 	outline: none;
@@ -75,8 +75,8 @@
 
 	&:checked +.form__radio-fake:after {
 		content: "";
-		width: 7px;
-		height: 7px;
+		width: rem(7px);
+		height: rem(7px);
 		background-color: #e35028;
 		border-radius: 50%;
 		display: block;
@@ -90,42 +90,42 @@
 .form__radio-fake {
 	display: inline-block;
 	align-items: center;
-	width: 15px;
-	height: 15px;
+	width: rem(15px);
+	height: rem(15px);
 	border-radius: 50%;
 	background-color: $white;
 	position: relative;
 	vertical-align: middle;
-	margin-right: 6px;
+	margin-right: rem(6px);
 }
 .form__reset {
 	display: inline-flex;
     border: none;
     outline: none;
     color: $white;
-    padding: 12px 15px;
+    padding: rem(12px) rem(15px);
     background-color: transparent;
     cursor: pointer;
 	font-family: Ubuntu;
-	font-size: 14px;
+	font-size: rem(14px);
 	font-weight: 300;
 
 }
 .form__checkbox-fake {
 	position: relative;
 	display: inline-flex;
-	width: 15px;
-	height: 15px;
+	width: rem(15px);
+	height: rem(15px);
 	background-color: $white;
-	margin-right: 6px;
+	margin-right: rem(6px);
 }
 .form__checkbox {
 	display: none;
 
 	&:checked + .form__checkbox-fake:after {
 		content: "";
-		width: 11px;
-		height: 9px;
+		width: rem(11px);
+		height: rem(9px);
 		background: url("../../img/icons/checkbox-icon.png") center center no-repeat;
 		background-size: cover;
 		border-radius: 50%;
