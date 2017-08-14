@@ -2,6 +2,7 @@
 	position: fixed;
 	top: rem(95px);
 	right: rem(55px);
+	z-index: 200;
 	
 	@include tab {
       display: none;  

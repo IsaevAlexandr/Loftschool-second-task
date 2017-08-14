@@ -13,7 +13,6 @@
 	color: $white;
 	// margin-left: 50px;
 	// margin-right: auto;
-
 }
 
 .burger-menu__list {
@@ -25,6 +24,7 @@
 	display: flex;
 	justify-content: flex-end;
 	// overflow: hidden;
+	z-index: 10;
 
 	p {
 		display: block;
@@ -43,13 +43,14 @@
 	&_active {
 
 		.burger-menu__name {
-			background: $grey;
+			background: rgba($grey,0.7);
 		}
 
 		p {
 			width: rem(541px);
 			height: 100%;
 			padding: rem(33px) rem(62px);
+			// transition: .1s;
 		}
 		
 	}
