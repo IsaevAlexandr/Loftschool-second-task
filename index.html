@@ -5,14 +5,13 @@
   <title>Burgers</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="wrapper">
     <div class="maincontent">
       <section class="section section_screen-1">
-        <div class="container container_screen-1">
+        <div class="container">
           <header class="header">
             <div class="header__logo">
               <a href="/" class="logo__link"><img src="img/icons/logo/logo.svg" alt="logo" class="logo__img"></a>
@@ -28,24 +27,24 @@
               </ul>
             </nav>
             <button class="order-btn">Заказать</button>
-            <button class="menu-btn"></button>
+            <a href="#" class="menu-btn"></a>
           </header>
           <div class="content">
             <div class="content__section">
-              <div class="content__img"></div>
+              <img src="img/content/burger-1s.png" alt="burger" class="content__img">
             </div>
             <div class="content__section">
               <div class="section-title">Мы делаем</div>
               <div class="content__text">натуральные бургеры</div>
             </div>
           </div>
-          <a href="#" class="nav-btn"></a>
+          <a href="#benefits__list" class="nav-btn"></a>
         </div>
       </section> 
       <section class="section section_screen-2">
         <div class="container container-screen-2">
-          <div class="section-title section-title_color_black">Мы лучшие</div>
-          <ul class="benefits__list">
+          <div class="section-title section-title_black">Мы лучшие</div>
+          <ul class="benefits__list" name="benefits__list">
             <li class="benefits__item">
               <div class="benefits__image ">
                 <svg class="benefits_icon benefits__image_meat">
@@ -69,8 +68,8 @@
               </div>
             </li>
             <li class="benefits__item">
-              <div class="benefits__image">
-                <svg class="benefits_icon benefits__image_natural">
+              <div class="benefits__image benefits__image_natural">
+                <svg class="benefits_icon">
                     <use xlink:href="img/sprite/sprite.svg#natural"></use>
                 </svg>
               </div>
@@ -88,7 +87,7 @@
           <div class="section-title section-title_screen_4">команда</div>
           <ul class="team__list">
             <li class="team__item">
-              <div class="team__name">Дэниэл Редклиф</div>
+              <a href="" class="team__name">Дэниэл Редклиф</a>
               <div class="team__container">
                 <div class="team__foto">
                   <img src="img/content/team-member.jpg" alt="team-member" class="team__img">
@@ -100,7 +99,7 @@
               </div>
             </li>
             <li class="team__item team__item_active">
-              <div class="team__name">Ричард Джеймс</div>
+              <a href="" class="team__name">Ричард Джеймс</a>
               <div class="team__container">
                 <div class="team__foto">
                   <img src="img/content/team-member.jpg" alt="team-member" class="team__img">
@@ -112,7 +111,7 @@
               </div>
             </li>
             <li class="team__item">
-              <div class="team__name">Джейк Финн</div>
+              <a href="" class="team__name">Джейк Финн</a>
               <div class="team__container">
                 <div class="team__foto">
                   <img src="img/content/team-member.jpg" alt="team-member" class="team__img">
@@ -124,7 +123,7 @@
               </div>
             </li>
             <li class="team__item">
-              <div class="team__name">Николай Иванов</div>
+              <a href="" class="team__name">Николай Иванов</a>
               <div class="team__container">
                 <div class="team__foto">
                   <img src="img/content/team-member.jpg" alt="team-member" class="team__img">
@@ -158,88 +157,76 @@
       </section> 
 
       <section class="section section_screen-6">
-        <ul class="people__list">
-          <li class="people__item">
-            <div class="people__photo">
-              <img src="img/content/people/1.jpg" alt="review" class="people__img">
+        <div class="people">
+          <ul class="people__list">
+            <li class="people__item people__item_1">
+              <div class="people__discription">
+                <div class="people__title">Константин Спилберг</div>
+                <div class="people__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                <button class="people__btn">Подробнее</button>
+              </div>
+
+              
+
+            </li>
+            <li class="people__item people__item_2">
+              <div class="people__discription">
+                <div class="people__title">Константин Спилберг</div>
+                <div class="people__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                <button class="people__btn">Подробнее</button>
+              </div>
+            </li>
+            <li class="people__item people__item_3">
+              <div class="people__discription">
+                <div class="people__title">Константин Спилберг</div>
+                <div class="people__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                <button class="people__btn">Подробнее</button>
+              </div>
+            </li>
+            <li class="people__item people__item_4">
+              <div class="people__discription">
+                <div class="people__title">Константин Спилберг</div>
+                <div class="people__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                <button class="people__btn">Подробнее</button>
+              </div>
+            </li>
+            <li class="people__item people__item_5">
+              <div class="people__discription">
+                <div class="people__title">Константин Спилберг</div>
+                <div class="people__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                <button class="people__btn">Подробнее</button>
+              </div>
+            </li>
+            <li class="people__item people__item_6">
+              <div class="people__discription">
+                <div class="people__title">Константин Спилберг</div>
+                <div class="people__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                <button class="people__btn">Подробнее</button>
+              </div>
+            </li>
+            <li class="people__item people__item_7">
+              <div class="people__discription">
+                <div class="people__title">Константин Спилберг</div>
+                <div class="people__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                <button class="people__btn">Подробнее</button>
+              </div>
+            </li>
+            <li class="people__item people__item_8">
+              <div class="people__discription">
+                <div class="people__title">Константин Спилберг</div>
+                <div class="people__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                <button class="people__btn">Подробнее</button>
+              </div>
+            </li>
+          </ul>
+
+          <div class="people__hidden">
+            <div class="people__title">Константин Спилберг</div>
+            <div class="people__text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.
             </div>
-            <div class="people__content">
-              <div class="people__name">Константин Спилберг</div>
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="people__btn">Подробнее</button>
-            </div>
-          </li>
-          <li class="people__item">
-            <div class="people__photo">
-              <img src="img/content/people/2.jpg" alt="review" class="people__img">
-            </div>
-            <div class="people__content">
-              <div class="people__name">Константин Спилберг</div>
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="people__btn">Подробнее</button>
-            </div>
-          </li>
-          <li class="people__item">
-            <div class="people__photo">
-              <img src="img/content/people/3.jpg" alt="review" class="people__img">
-            </div>
-            <div class="people__content">
-              <div class="people__name">Константин Спилберг</div>
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="people__btn">Подробнее</button>
-            </div>
-          </li>
-          <li class="people__item">
-            <div class="people__photo">
-              <img src="img/content/people/4.jpg" alt="review" class="people__img">
-            </div>
-            <div class="people__content">
-              <div class="people__name">Константин Спилберг</div>
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="people__btn">Подробнее</button>
-            </div>
-          </li>
-          <li class="people__item">
-            <div class="people__photo">
-              <img src="img/content/people/5.jpg" alt="review" class="people__img">
-            </div>
-            <div class="people__content">
-              <div class="people__name">Константин Спилберг</div>
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="people__btn">Подробнее</button>
-            </div>
-          </li>
-          <li class="people__item">
-            <div class="people__photo">
-              <img src="img/content/people/6.jpg" alt="review" class="people__img">
-            </div>
-            <div class="people__content">
-              <div class="people__name">Константин Спилберг</div>
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="people__btn">Подробнее</button>
-            </div>
-          </li>
-          <li class="people__item">
-            <div class="people__photo">
-              <img src="img/content/people/7.jpg" alt="review" class="people__img">
-            </div>
-            <div class="people__content">
-              <div class="people__name">Константин Спилберг</div>
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="people__btn">Подробнее</button>
-            </div>
-          </li>
-          <li class="people__item">
-            <div class="people__photo">
-              <img src="img/content/people/8.jpg" alt="review" class="people__img">
-            </div>
-            <div class="people__content">
-              <div class="people__name">Константин Спилберг</div>
-              <p>Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</p>
-              <button class="people__btn">Подробнее</button>
-            </div>
-          </li>
-        </ul>
+          </div>
+
+        </div>
       </section> 
 
       <section class="section section_screen-7">
@@ -290,7 +277,7 @@
                       <textarea class="form__textarea"></textarea>
                   </label>
                 </div>  
-                <div class="form__row">
+                <div class="form__row form__row_mob">
                   <label class="form__label">
                     <input type="radio" name="change" value="true" class="form__radio">
                     <div class="form__radio-fake"></div>
@@ -302,14 +289,14 @@
                     <div class="form__title">Оплата по карте</div>
                   </label>
                 </div>
-                <div class="form__row">
+                <div class="form__row form__row_mob">
                   <label class="form__label">
                     <input type="checkbox" name="no-call" value="true" class="form__checkbox" checked>
                     <div class="form__checkbox-fake"></div>
                     <div class="form__title">Не перезванивать</div>
                   </label>
                 </div>
-                <div class="form__row">
+                <div class="form__row form__row_mob">
                   <input type="submit" class="order-btn" value="Заказать">
                   <input type="reset" class="form__reset" value="Очистить">
                 </div>
@@ -386,6 +373,8 @@
       </ul>
     </div>
   </div>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.onepage-scroll.min.js"></script>
   <script src="js/script.js"></script>
 </body>
 </html>

@@ -48,3 +48,7 @@ accordion("burger-menu__list", "burger-menu__item", "burger-menu__item_active");
 })();
 
 
+// ===============================================
+// One page scroll
+// ===============================================
+$(".maincontent").onepage_scroll();

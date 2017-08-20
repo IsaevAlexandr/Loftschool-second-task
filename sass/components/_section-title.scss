@@ -10,5 +10,9 @@
     @include tab {
         margin-top: 0;
         text-align: center;
-    }   
+    } 
+
+    @include mob  {
+        font-size: rem(56px);
+    }  
 }

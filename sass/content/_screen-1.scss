@@ -3,10 +3,6 @@
     background-size: cover;
 }
 
-.container_screen-1 {
-    height: 100%;
-}
-
 .header {
     display: flex;
     flex-flow: row no-wrap;
@@ -97,7 +93,7 @@
 }
 
 .content {
-    // width: rem(451px);
+    max-width: 100%;
     display: flex;
     align-items: center;
     flex-grow: 1;
@@ -113,35 +109,24 @@
     }
 
 }
-
 .content__section {
-
-    .section-title, .content__text {
-        padding-left: rem(10px);
-
-    }
+    max-width: 50%;
 
     @include tab {
+        max-width: 100%;   
         text-align: center;
-        .section-title, .content__text {
-            padding-left: 0;
-            width: rem(451px);
-        }
-        
     }
 }
-
 .content__img {
-    width: rem(451px);
-    height: rem(420px);
-    background: url("../img/content/burger-1s.png") center center no-repeat;
-    background-size: cover;
+    width: 100%;
+    padding: rem(10px);
 
-    @include mob {
-      width: rem(360px);
-      height: rem(333px);  
+    @include tab {
+        width: 90%;
     }
 }
+
+
 
 .content__text {
     color: $white;
@@ -149,6 +134,10 @@
     font-size: rem(65px);
     font-weight: 500;
     line-height: rem(60px);
+
+    @include mob {
+        font-size: rem(50px);
+    }
 }
 
 .nav-btn {

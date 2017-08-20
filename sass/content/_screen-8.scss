@@ -9,6 +9,11 @@
     flex-direction: row;
     justify-content: center;
     padding: 0 0 0 rem(22px);
+
+    @include mob {
+    	flex-direction: column;
+    	align-items: center;
+    }
 }
 
 .footer {
@@ -25,6 +30,11 @@
 	display: flex;
 	flex-direction: column;
 	align-content: space-around;
+
+	@include mob {
+		margin-right: initial;
+		margin-bottom: 12px;
+    }
 }
 
 .footer__location {
@@ -34,17 +44,22 @@
 	color: $white;
 	font-weight: 300;
 
-	
+	@include mob {
+		margin: 0 auto;
+    }
 }
 
-
-.footer_phone{
+.footer_phone {
 	display: flex;
 	align-items: center;
 	font-family: Ubuntu;
 	font-size: rem(14px);
 	color: #e45028;
 	font-weight: 700;
+
+	@include mob {
+		margin: 0 auto;
+    }
 }
 
 .footer_phone-icon {

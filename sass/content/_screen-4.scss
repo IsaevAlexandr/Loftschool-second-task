@@ -38,6 +38,7 @@
 	&_active {
 		.team__container {
 			height: auto;
+			transition: 1s;
 		}
 		.team__name {
 			color: $yellow;
@@ -58,6 +59,7 @@
 	align-items: center;
 	margin-bottom: rem(15px);
 	cursor: pointer;
+	text-decoration: none;
 
 	@include tab {
 		justify-content: center;
@@ -101,7 +103,8 @@
 }
 
 .team__img {
-	// свойства для позиционирования фотографии
+	width: 100%;
+	height: 100%;// свойства для позиционирования фотографии
 }
 
 .team__description {

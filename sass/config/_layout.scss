@@ -15,19 +15,18 @@
     min-height: 650px; 
     height: 100vh;
 
-    @include tab {
-        min-height: 1024px;
-    }
-
-    @include mob {
-        min-height: 800px;
-    }
+    // @include tab {
+    //     min-height: 1024px; 
+    // }
+    // @include mob {
+    //     min-height: 800px; 
+    // }
 }
 
 .container {
     position: relative;
     width: 95%;
-    max-width: 940px;
+    max-width: rem(940px);
     margin: 0 auto;
     display: flex;
     flex-direction: column;
