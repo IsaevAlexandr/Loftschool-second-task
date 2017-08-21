@@ -124,26 +124,26 @@
   }
 }
 
-// .people__hidden {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   // width: 100vw;
-//   // height: 100vh;
-//   // z-index: 10000;
+.people__hidden {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  // width: 100vw;
+  // height: 100vh;
+  // z-index: 10000;
 
-//    background-color: $black; 
+   background-color: $black; 
 
-//   .people__text {
-//     display: block;
+  .people__text {
+    display: block;
 
-//     // @include mob {
-//     //   background-color: $white;
-//     //   border-radius: 5px;
-//     //   color: $black;
-//     //   margin: 0 12px;
-//     // }
-//   }
-// }
+    // @include mob {
+    //   background-color: $white;
+    //   border-radius: 5px;
+    //   color: $black;
+    //   margin: 0 12px;
+    // }
+  }
+}

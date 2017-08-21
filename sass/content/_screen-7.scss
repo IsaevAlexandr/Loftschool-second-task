@@ -1,14 +1,13 @@
 .section_screen-7 {
     background: url("../img/backgrounds/screen-7-bg.jpg") center center no-repeat;
     background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
+ 
 }
 .section-title_screen_7 {
 	// margin-top: rem(-20px);
  //    margin-bottom: rem(56px);
+
 }
 
 
@@ -16,6 +15,16 @@
 // 	width: 100%;
 // 	height: 100%;
 // }
+
+.container_screen-7{
+	justify-content: center;
+}
+.form-form {
+	// flex: 1;
+	// display: flex;
+	// align-items: center;
+}
+
 .form {
 	display: flex;
 	flex-flow: row no-wrap;
